@@ -1,5 +1,6 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        from collections import defaultdict, deque
         graph = defaultdict(list)
         inDegree = [0] * numCourses
 
